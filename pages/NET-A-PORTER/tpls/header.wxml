@@ -1,0 +1,13 @@
+<template name="header">
+  <view class="header">
+    <image src="/images/choose.png"></image>
+    <view class="logo">
+      <view class="name">NET-A-PORT</view>
+      <view class="title">
+        <view>颇</view><view>特</view><view>女</view><view>士</view>
+      </view>
+    </view>
+    <image src="/images/search.png"></image>
+    <image src="/images/shopping.png"></image>
+  </view>
+</template>

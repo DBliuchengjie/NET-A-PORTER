@@ -1,0 +1,18 @@
+<view class="container">
+    <import src="../tpls/header.wxml" />
+    <template is="header" />
+    <scroll-view class="scroll" scroll-y="true">
+      <view class="title">
+        <view>{{msg.name}}</view>
+        <view>{{msg.detail}}</view>
+        <view>{{msg.price}}</view>
+      </view>
+        <swiper indicator-dots="{{false}}" indicator-dots="{{true}}" autoplay="{{false}}" duration="{{duration}}">
+          <swiper-item wx:for="{{swiper}}">
+              <image src="{{item}}" />
+          </swiper-item>
+        </swiper>
+        <import src="../tpls/footer.wxml" />
+        <template is="footer" data="{{service1,service2}}" />
+    </scroll-view>
+</view>

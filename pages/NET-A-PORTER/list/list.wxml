@@ -1,0 +1,19 @@
+<view class="container">
+  <import src="../tpls/header.wxml" />
+  <template is="header" />
+  <scroll-view class="scroll" scroll-y="true">
+    <ul class="scrollContent">
+      <navigator url="/pages/NET-A-PORTER/detail/detail" wx:for="{{list2}}" catchtap="setStorage" data-src="{{item.img}}" data-name="{{item.name1}}" data-item="{{item.name2}}" data-detail="{{item.detail}}" data-price="{{item.price}}" data-second="{{item.img2}}" data-third="{{item.img3}}" data-fourth="{{item.img4}}" data-fifth="{{item.img5}}" data-sixth="{{item.img6}}">
+        <li>
+          <image src="{{item.img}}"></image>
+          <view>{{item.name1}}</view>
+          <view>{{item.name2}}</view>
+          <view>{{item.detail}}</view>
+          <view>{{item.price}}</view>
+        </li>
+      </navigator>
+    </ul>
+    <import src="../tpls/footer.wxml" />
+    <template is="footer" data="{{service1,service2}}" />
+  </scroll-view>
+</view>

@@ -1,0 +1,33 @@
+<template name="footer">
+  <view class="footer">
+      <view class="service">
+          <view class="service1" hidden="{{service1}}">快速配送以及28天内免费退货服务</view>
+          <view class="service2" hidden="{{service2}}">
+              <view class="message">浏览旗下其他网站</view>
+              <view class="messageBox">
+                  <image src="/images/MrP.png" mode="scaleToFill"></image>
+                  <view class="line"></view>
+                  <image src="/images/TON.png" mode="scaleToFill"></image>
+              </view>
+          </view>
+      </view>
+      <view class="callBox">
+          <view class="call">
+              拨打客服电话
+          </view>
+      </view>
+      <view class="serviceMsg">
+          <view>服务信息</view>
+          <image src="/images/add.png"></image>
+      </view>
+      <view class="follow">
+          <view class="followContent">订阅 NET-A-PORTER颇特女士 电子快报</view>
+          <image src="/images/large.png"></image>
+      </view>
+      <view class="copyright">
+          <image src="/images/copyright.png"></image>
+          <view>2016</view>
+          <view class="v2">NET-A-PORTER</view>
+      </view>
+  </view>
+</template>

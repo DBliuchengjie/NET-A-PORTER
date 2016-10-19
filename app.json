@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/NET-A-PORTER/index/index",
+    "pages/NET-A-PORTER/list/list",
+    "pages/NET-A-PORTER/detail/detail"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

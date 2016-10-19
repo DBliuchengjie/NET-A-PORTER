@@ -1,0 +1,25 @@
+<view class="container">
+    <import src="../tpls/header.wxml" />
+    <template is="header" />
+    <scroll-view class="scroll" scroll-y="true">
+        <view class="container2">
+            <view class="option">
+                <view class="option1">最新上架</view>
+                <view class="option2">品牌</view>
+            </view>
+            <navigator url="/pages/NET-A-PORTER/list/list" class="product" wx:for="{{list}}">
+              <view>
+                <image src="{{item.url}}" mode="aspectFit"></image>
+                <view class="proNameBoxL">
+                  <view class="proNameBoxS">
+                    <a>{{item.name1}}</a>
+                    <view>{{item.name2}}</view>
+                  </view>
+                </view>
+              </view>
+            </navigator>
+        </view>
+        <import src="../tpls/footer.wxml" />
+        <template is="footer" data="{{service1,service2}}" />
+    </scroll-view>
+</view>

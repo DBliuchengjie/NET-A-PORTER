@@ -1,0 +1,43 @@
+Page({
+  data:{
+    swiper:[],
+    service1:true,
+    service2:false,
+    duration:300,
+    msg:{
+      name:'',
+      detail:'',
+      price:''
+    }
+  },
+  onLoad:function(){
+    this.data.swiper=[];
+    this.data.swiper.push(wx.getStorageSync('src'));
+    this.data.swiper.push(wx.getStorageSync('img2'));
+    this.data.swiper.push(wx.getStorageSync('img3'));
+    this.data.swiper.push(wx.getStorageSync('img4'));
+    this.data.swiper.push(wx.getStorageSync('img5'));
+    this.data.swiper.push(wx.getStorageSync('img6'));
+    this.data.msg.name=wx.getStorageSync('name')+' '+wx.getStorageSync('item');
+    this.data.msg.detail=wx.getStorageSync('detail');
+    this.data.msg.price=wx.getStorageSync('price');
+  },
+  onReady:function(){
+    var that = this;
+    setInterval(function(){
+      if(that.data.service1){
+        that.setData({
+          service1:false,
+          service2:true
+        })
+      }
+      else{
+        that.setData({
+          service1:true,
+          service2:false
+        })
+      }
+    },2000);
+  }
+
+})
