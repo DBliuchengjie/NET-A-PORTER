@@ -11,3 +11,5 @@
 
 ����Ŀʹ�õ���API
 1.���ݻ���(wx.setStorageSynch,wx.getStorageSync,wx.clearStorageSync)
+
+s
